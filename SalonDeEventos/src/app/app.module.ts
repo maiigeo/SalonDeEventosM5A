@@ -9,15 +9,18 @@ import { HeadersComponent } from './headers/headers.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios.component';
+import { ReservaComponent } from './reserva/reserva.component';
+import { CotizacionComponent } from './cotizacion/cotizacion.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent},
-  { path: 'header', component: HeaderComponent},
-  { path: 'singup', component: RegistroUsuariosComponent},
+  { path: '', redirectTo: '/header', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'header', component: HeaderComponent },
+  { path: 'signup', component: RegistroUsuariosComponent },
+  { path: 'reserva', component: ReservaComponent}
 
 ]
-
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ const routes: Routes = [
     HeadersComponent,
     FooterComponent,
     SliderComponent,
-    RegistroUsuariosComponent
+    RegistroUsuariosComponent,
+    ReservaComponent,
+    CotizacionComponent
   ],
   imports: [
     BrowserModule,
